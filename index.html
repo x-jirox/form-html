@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this survey form to help us improve our service.</p>
+
+    <form id="survey-form">
+        <!-- Name Field -->
+        <label for="name" id="name-label">Name:</label>
+        <input id="name" type="text" name="name" placeholder="Enter your name" required>
+        
+        <!-- Email Field -->
+        <label for="email" id="email-label">Email:</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Number Field -->
+        <label for="number" id="number-label">Age:</label>
+        <input id="number" type="number" name="age" min="18" max="100" placeholder="Enter your age" required>
+
+        <!-- Dropdown -->
+        <label for="dropdown">Select your favorite programming language:</label>
+        <select id="dropdown" name="programming-language">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <label>Do you prefer working with front-end or back-end development?</label>
+        <label for="frontend">Front-End</label>
+        <input type="radio" id="backend" name="development" value="back-end">
+        <label for="backend">Back-End</label>
+
+        <!-- Checkboxes -->
+        <label>Which technologies do you use?</label>
+         <input type="radio" id="backend" name="development" value="back-end">
+        <label for="react">React</label>
+        <input type="checkbox" id="nodejs" name="technologies" value="nodejs">
+        <label for="nodejs">Node.js</label>
+        <input type="checkbox" id="angular" name="technologies" value="angular">
+        <label for="angular">Angular</label>
+
+        <!-- Textarea -->
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" placeholder="Write your comments here"></textarea>
+
+        <!-- Submit Button -->
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
